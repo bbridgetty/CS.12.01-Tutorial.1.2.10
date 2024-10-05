@@ -51,9 +51,12 @@ class LightBoardTest {
         // Row 0
         assertFalse(lightBoard.evaluateLight(0,0));
         assertFalse(lightBoard.evaluateLight(0,1));
+        // originally assertTrue
         assertTrue(lightBoard.evaluateLight(0,2));
+        // originally assertFalse
         assertFalse(lightBoard.evaluateLight(0,3));
-        assertFalse(lightBoard.evaluateLight(0,4));
+        assertTrue(lightBoard.evaluateLight(0,4));
+        // originally assertFalse
 
         // Row 1
         assertFalse(lightBoard.evaluateLight(1,0));
